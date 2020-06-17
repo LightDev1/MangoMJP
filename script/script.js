@@ -6,6 +6,7 @@ const toggleBar = () => {
     menuBar.classList.toggle('move__menu__active');
 }
 
+document.addEventListener('swipe', toggleBar);
 burgerBtn.addEventListener('click', toggleBar);
 closeBtn.addEventListener('click', toggleBar);
 
