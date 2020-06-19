@@ -3,6 +3,11 @@ let swipe = new CustomEvent('swipe', {
     cancelable: true,
 });
 
+let unswipe = new CustomEvent('unswipe', {
+    bubbles: true,
+    cancelable: true,
+});
+
 let initialPoint;
 
 let finalPoint;
@@ -22,6 +27,9 @@ document.addEventListener('touchend', (event) => {
         if (xAbs > yAbs) {
             if (finalPoint.pageX > initialPoint.pageX){
                 document.dispatchEvent(swipe);
+            }
+            else {
+                menuBar.dispatchEvent(unswipe);
             }
         }
     }

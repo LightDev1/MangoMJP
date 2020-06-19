@@ -223,5 +223,47 @@ header h2 {
     margin-top: 20rem;
   }
 }
+.hide {
+  display: none;
+}
+
+.articles__header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  border-bottom: 2px solid #C64F06;
+}
+.articles__header h2 {
+  border: none;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+.articles__header h2:hover {
+  color: #941D00;
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.about__container .about__content {
+  text-align: center;
+}
+.about__container .about__content h1 {
+  font-size: 9rem;
+  padding-bottom: 1rem;
+}
+.about__container .about__content h2 {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  color: #C64F06;
+}
+.about__container .about__content p {
+  font-size: 2rem;
+  color: #70727B;
+}
 
 /*# sourceMappingURL=style.css.map */
